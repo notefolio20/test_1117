@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+/* reset for pc */
+.mobile {display: none !important;}
+br.only-m {content: '';}
+br.only-m::after {content: ' ';}
+
+
+/* 전역 변수 설정 */
+:root {
+
+}
+
+div.search-pop > grid-container {
+  display: grid;
+  background-color: blue;
+}
+
+.search-box {
+  height: 40px;
+  width: 500px;
+  border: 1px solid #000;
+  border-radius: 40px;
+}
+/* common (include, layout) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

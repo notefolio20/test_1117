@@ -1,0 +1,85 @@
+@charset 'utf-8';
+
+/* reset for pc */
+.mobile {display: none !important;}
+br.only-m {content: '';}
+br.only-m::after {content: ' ';}
+
+
+/* 전역 변수 설정 */
+:root {
+
+}
+
+
+div.grid-container {
+  height: 600px;
+  /* 세로위치에 대한 정렬을 하려면 기본 높이값이 있어야 가능 */
+  background-color: blue;
+  display: grid;
+  grid-template-areas: 'header header'
+  'visual visual'
+  'lnb main'
+  'footer footer'
+  ;
+  /* grid-template-columns: 100px 100px 100px 100px ;
+  grid-template-rows: 200px 100px auto; */
+  /* 가로행(olumns), 세로행(rows)에 대한 갯수와 너비 설정 */
+
+  /* justify-content: space-evenly; 
+  align-content: space-between; */
+  /* 가로정렬(justify-content), 세로정렬(align-content)에 대한 설정을 해줄 수 있다. */
+
+  /* column-gap: 10px;
+  row-gap: 10%; */
+  gap: 10px;
+  /* 갭 합해서 쓸때는 앞쪽이 세로간격, 뒤쪽이 가로간격 */
+}
+
+div.grid-container > div {
+  background-color: skyblue;
+  font-size: 60px;
+}
+div.grid-container > div:nth-child(1) {
+  grid-area: header;
+}
+div.grid-container > div:nth-child(2) {
+  grid-area: visual;
+}
+div.grid-container > div:nth-child(3) {
+  grid-area: lnb;
+}
+div.grid-container > div:nth-child(4) {
+  grid-area: main;
+}
+div.grid-container > div:nth-child(5) {
+  grid-area: footer;
+}
+/* common (include, layout) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

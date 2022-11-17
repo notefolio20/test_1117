@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 사용자의 브라우저의 버전을 최신버전을 선택해서 렌더링하라 ie전용 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, minimal-ui">
+    <!-- 모바일이나 반응형웹일 경우 위 코드 필요 (pc전용일 경우 content="width=1200") -->
+    <meta name="author" content="DinoWorks Inc. 디노웍스(주)">
+    <meta name="apple-mobile-web-app-title" content="코웨이">
+    <!-- 모바일에서 홈화면 바로가기 타이틀을 코웨이로 넣어준다 -->
+    <title>coway.com | 코웨이</title>
+    <meta name="description" content="코웨이 정수기, 공기청정기, 비데, 매트리스, 안마의자 등, 다양한 제품의 전문적인 렌탈 서비스, coway.com에서 만나보세요.">
+    <!-- 검색 시 구글엔진이 찾아내는 정보 -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/web-font.css" type="text/css">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <!--
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all and (min-width: 1023.9px)">
+    <link rel="stylesheet" href="./css/style-mobile.css" type="text/css" media="all and (max-width: 1023.9px)">
+-->
+    <script src="./lib/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./js/dino-common.js"></script>
+  </head>
+  <body class="main">
+
+      <div id="wrapper">
+        <a href="#main" id="skip-nav">본문바로가기</a>
+        <header id="header">
+          <div class="container">
+            <h1><a href="#"><img src="./img/logo.png" alt="COWAY"></a></h1>
+          </div>
+          <nav id="gnb">
+            <ul>
+              <li class="on">
+                <a href="#">제품</a>
+                <ul>
+                  <li><a href="#">코웨이 결합플랜<img alt="더보기" src="./img/icon/icon-more.png"></a></li>
+                  <li class="on">
+                    <a href="#">정수기</a>
+                    <ul>
+                      <li><a href="#">냉/온/정수기</a></li>
+                      <li class="on"><a href="#">얼음/탄산 정수기</a></li>
+                      <li><a href="#">스탠드 정수기</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">공기청정기</a>
+                    <ul>
+                      <li><a href="#">일반 공기청정기</a></li>
+                      <li><a href="#">가습/제습청정기</a></li>
+                      <li><a href="#">의류청정기</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">비데/연수기</a>
+                    <ul>
+                      <li><a href="#">룰루 비데</a></li>
+                      <li><a href="#">연수기</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">매트리스/프레임</a>
+                    <ul>
+                      <li><a href="#">매트리스</a></li>
+                      <li><a href="#">프레임</a></li>
+                      <li><a href="#">일체형</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">건강/주방 가전</a>
+                    <ul>
+                      <li><a href="#">전기레인지</a></li>
+                      <li><a href="#">안마의자</a></li>
+                      <li><a href="#">기타</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">필터/소모품</a>
+                    <ul>
+                      <li><a href="#">정수기</a></li>
+                      <li><a href="#">공기청정기</a></li>
+                      <li><a href="#">룰루비데</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">서비스</a>
+                <ul>
+                  <li>
+                    <a href="#">하트서비스</a>
+                    <ul>
+                      <li><a href="#">정수기 하트서비스</a></li>
+                      <li><a href="#">공기청정기 하트서비스</a></li>
+                      <li><a href="#">비데 하트서비스</a></li>
+                      <li><a href="#">연수기 하트서비스</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">케어서비스</a>
+                    <ul>
+                      <li><a href="#">매트리스 케어서비스</a></li>
+                      <li><a href="#">환기장치 케어서비스</a></li>
+                      <li><a href="#">주방후드 케어서비스</a></li>
+                      <li><a href="#">의류청정기 케어서비스</a></li>
+                      <li><a href="#">안마의자 케어서비스</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">디지털 서비스</a>
+                    <ul>
+                      <li><a href="#">AR 스마트카탈로그</a></li>
+                      <li><a href="#">loCare 서비스</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">코웨이 Space</a>
+                    <ul>
+                      <li><a href="#">SLEEP CARE 체험매장</a></li>
+                      <li><a href="#">코웨이 Gallery</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">기타서비스</a>
+                    <ul>
+                      <li><a href="#">수질검사 서비스</a></li>
+                      <li><a href="#">필터회수 서비스</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">스토리</a>
+                <ul>
+                  <li><a href="#">Coway X BTS</a></li>
+                  <li><a href="#">룰루 스토리</a></li>
+                  <li><a href="#">베스트 리뷰</a></li>
+                  <li><a href="#">코웨이 스토리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">혜택</a>
+                <ul>
+                  <li><a href="#">한눈에 보는 혜택</a></li>
+                  <li><a href="#">진행중 이벤트</a></li>
+                  <li><a href="#">당첨자 발표</a></li>
+                  <li><a href="#">제휴카드</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">고객지원</a>
+                <ul>
+                  <li>
+                    <a href="#">제품 사용 지원</a>
+                    <ul>
+                      <li><a href="#">A/S·이전설치 신청</a></li>
+                      <li><a href="#">자주 찾는 질문</a></li>
+                      <li><a href="#">스스로 관리팁</a></li>
+                      <li><a href="#">제품 사용설명서 찾기</a></li>
+                      <li><a href="#">요금/보증안내</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">고객 상담</a>
+                    <ul>
+                      <li><a href="#">상담예약</a></li>
+                      <li><a href="#">1:1 문의</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">고객게시판</a>
+                    <ul>
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">서비스 뉴스</a></li>
+                      <li><a href="#">칭찬/개선</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">기타 이용 안내</a>
+                    <ul>
+                      <li><a href="#">매장 찾기</a></li>
+                      <li><a href="#">판매인 검색</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="live"><a href="#">코웨이<span class="ir-hidden">Live</span></a></li>
+              <li><a href="#">B2B</a></li>
+            </ul>
+          </nav>
+
+          <div class="search">
+            <label for="search-keyword">통합검색</label>
+            <input type="text" name="" id="search-keyword" placeholder="검색어를 입력해주세요">
+            <a href="#"><img src="./img/icon/icon-search-gray.png" alt="검색하기"></a>
+          </div>
+
+          <ul class="top-menu">
+            <li>
+              <a href="#" title="마이페이지"><img alt="마이페이지" src="./img/icon/icon-mypage.png"></a>
+              <ul>
+                <li><a href="#">사용중인 제품</a></li>
+                <li><a href="#">주문내역</a></li>
+                <li><a href="#">로그인</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="장바구니">
+                <img alt="장바구니" src="./img/icon/icon-cart.png">
+                <span class="badge">10</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="글로벌사이트"><img alt="글로벌사이트" src="./img/icon/icon-global.png"></a>
+              <div class="layer-popup">
+                <a href="#" class="close" title="창닫기"><img alt="창닫기" src="./img/icon/icon-close.png"></a>
+                <p class="title">국가를 선택하세요.</p>
+                <ul class="custom-scroll">
+                  <li><a href="#"><img alt="Australia" src="./img/flag/icon-flag-australia.png"><em>Australia</em></a></li>
+                  <li><a href="#"><img alt="China" src="./img/flag/icon-flag-china.png"><em>China | 中国</em></a></li>
+                  <li><a href="#"><img alt="Dominican Republic" src="./img/flag/icon-flag-dominica.png"><em>Dominican Republic<br>| República Dominicana</em></a></li>
+                  <li><a href="#"><img alt="Germany" src="./img/flag/icon-flag-australia.png"><em>Germany | Deutschland</em></a></li>
+                  <li><a href="#"><img alt="India" src="./img/flag/icon-flag-india.png"><em>India</em></a></li>
+                  <li><a href="#"><img alt="Indonesia" src="./img/flag/icon-flag-indonesia.png"><em>Indonesia</em></a></li>
+                  <li><a href="#"><img alt="Japan" src="./img/flag/icon-flag-japan.png"><em>Japan | 日本</em></a></li>
+                  <li><a href="#"><img alt="Malaysia" src="./img/flag/icon-flag-malaysia.png"><em>Malaysia</em></a></li>
+                  <li><a href="#"><img alt="Sweden" src="./img/flag/icon-flag-sweden.png"><em>Sweden | Sverige</em></a></li>
+                  <li><a href="#"><img alt="Thailand" src="./img/flag/icon-flag-thailand.png"><em>Thailand | ประเทศไทย</em></a></li>
+                  <li><a href="#"><img alt="UK" src="./img/flag/icon-flag-uk.png"><em>UK</em></a></li>
+                  <li><a href="#"><img alt="USA(Rental)" src="./img/flag/icon-flag-usa.png"><em>USA(Rental)</em></a></li>
+                  <li><a href="#"><img alt="USA(Retail)" src="./img/flag/icon-flag-usa.png"><em>USA(Retail)</em></a></li>
+                  <li><a href="#"><img alt="Vietnam" src="./img/flag/icon-flag-vietnam.png"><em>Vietnam | Việt Nam</em></a></li>
+                  <li><a href="#"><img alt="International" src="./img/flag/icon-flag-international.png"><em>International</em></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul> <!-- div.container -->
+
+          
+        <div id="search-layer">
+          <div class="container">
+            <p class="keyword">
+              <label for="search-keyword" class="ir-hidden">통합검색</label>
+              <input type="text" name="search_keyword" id="search-keyword">
+              <a href="#" class="delete"><img alt="" src="./img/icon/icon-close-circle.png"></a>
+              <a href="#" class="search"><img alt="검색하기" src="./img/icon/icon-search-black.png"></a>
+            </p>
+            <div class="recent">
+              <p class="title"><em>최근 검색어</em></p>
+              <ul>
+                <li class="no-info">최근 검색한 단어가 없습니다.</li>
+                <li><a href="#">정수기1</a><a href="#">삭제</a></li>
+                <li><a href="#">정수기1</a><a href="#">삭제</a></li>
+                <li><a href="#">정수기1</a><a href="#">삭제</a></li>
+              </ul>
+              <a href="#" class="delete-all">전체삭제</a>
+            </div>
+            <div class="top10">
+              <p class="title"><em>인기 검색어 TOP 10</em></p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="rank">1</span>
+                    <em>정수기</em>
+                    <span class="icon no-change">변동없음</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="아이콘 정수기2 아이콘 정수기2 아이콘 정수기2 아이콘 정수기2">
+                    <span class="rank">2</span>
+                    <em>아이콘 정수기2 아이콘 정수기2 아이콘 정수기2 아이콘 정수기2</em>
+                    <span class="icon up">상승</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">3</span>
+                    <em>아이콘 얼음정수기</em>
+                    <span class="icon down">하락</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">4</span>
+                    <em>제휴카드</em>
+                    <span class="icon new">신규</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">5</span>
+                    <em>CHO-721N</em>
+                    <span class="icon no-change">변동없음</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">6</span>
+                    <em>비데</em>
+                    <span class="icon up">상승</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">7</span>
+                    <em>워터 스탠드 정수기</em>
+                    <span class="icon down">하락</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">8</span>
+                    <em>필터</em>
+                    <span class="icon no-change">변동없음</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">9</span>
+                    <em>CHPI-7400N</em>
+                    <span class="icon up">상승</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="rank">10</span>
+                    <em>제습기</em>
+                    <span class="icon down">하락</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="close"><img alt="검색창 닫기" src="./img/icon/icon-close-big.png"></a>
+        </div>
+        </header>
+
+        <main id="main">
+          <section id="main-visual">
+
+            <ul class="slide">
+              <li>
+                <img src="" alt="">
+                <a href="#">
+                  <span class="text"></span>
+                  <em></em>
+                  <span class="link">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="slide">
+              <li>
+                <img src="" alt="">
+                <a href="#">
+                  <span class="text"></span>
+                  <em></em>
+                  <span class="link">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="slide">
+              <li>
+                <img src="" alt="">
+                <a href="#">
+                  <span class="text"></span>
+                  <em></em>
+                  <span class="link">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="slide">
+              <li>
+                <img src="" alt="">
+                <a href="#">
+                  <span class="text"></span>
+                  <em></em>
+                  <span class="link">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="slide">
+              <li>
+                <img src="" alt="">
+                <a href="#">
+                  <span class="text"></span>
+                  <em></em>
+                  <span class="link">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="slide">
+              <li>
+                <img src="" alt="">
+                <a href="#">
+                  <span class="text"></span>
+                  <em></em>
+                  <span class="link">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="slide">
+              <li>
+                <img src="" alt="">
+                <a href="#">
+                  <span class="text"></span>
+                  <em></em>
+                  <span class="link">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="indicator">
+              
+              <span class="bar"><em>1 / 7</em></span>
+              <a href="#" class="play">
+                <i class="fa-solid fa-play fa-fw"><span>시작</span></i>
+                <i class="fa-solid fa-p면ㄷ fa-fw"><span>정지</span></i>
+              </a>
+            </div>
+            <p class="control">
+              <a href="#" class="prev">이전</a>
+              <a href="#" class="next">다음</a>
+            </p>
+          </section>
+ 
+          <section id="main-product">
+            <p class="title">코웨이로 채우는 스마트홈</p>
+            <ul>
+              <li><img src="" alt=""><em>정수기</em><span>Water Care</span></li>
+              <li><img src="" alt=""><em>공기청정기</em><span>air Care</span></li>
+              <li><img src="" alt=""><em>비데/연수기</em><span>body Care</span></li>
+              <li><img src="" alt=""><em>매트리스/프레임</em><span>Sleep Care</span></li>
+              <li><img src="" alt=""><em>건강/주방 가전</em><span>Living Care</span></li>
+              <li><img src="" alt=""><em>필터/소모품</em><span>Filter</span></li>
+            </ul>
+          </section>
+          <section id="line-banner">
+            <img src="" alt="">
+          </section>
+          <section id="coway-story">
+            <p class="title"><span>STORY</span> 스마트한 공간을 만들어 줄<br> 코웨이 스토리</p>
+          </section>
+        </main>
+
+        <footer id="footer">
+
+        </footer>
+      </div>
+      
+    </body>
+
+<script>
+'use strict';
+
+
+
+</script>
+
+  </body>
+</html>
+
+
